@@ -36,7 +36,7 @@ After=network-online.target
 [Service]
 User=minecraft
 WorkingDirectory=/home/minecraft/minecraft
-ExecStart=/usr/bin/java -Xms4096M -Xmx4096M -jar server.jar nogui
+ExecStart=/usr/bin/java -Xms4096M -Xmx4096M -jar paper.jar nogui
 Restart=always
 # Do not remove this!
 StandardInput=null
