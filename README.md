@@ -30,12 +30,12 @@ curl -o paper.jar $PAPERMC_URL
 ### Start server
 Accept eula
 ```bash
-sed -i 's/false/true/' eula.txt
+echo "eula=true" > eula.txt
 ```
 
 Start server
 ```bash
-java -Xms4096M -Xmx4096M -jar server.jar nogui
+java -Xms4096M -Xmx4096M -jar paper.jar nogui
 ```
 > Once server is started exit by typing `stop`
 
